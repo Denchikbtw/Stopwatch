@@ -44,7 +44,16 @@ body {
     font-size: 20px;
     font-weight: 600;
     font-family: Thin;
+    transition: 0.2s;
 }
+
+#right-button:hover, #left-button:hover {
+   filter: brightness(0.85); 
+}
+
+#right-button:active, #left-button:active {
+    filter: brightness(0.75); 
+ }
 
 #left-button {
     margin-right: 130px;
@@ -74,4 +83,17 @@ ul li {
     font-size: 30px;
     font-family: Regular;
     border-bottom: 0.5px solid #2a2929;
+}
+
+.timer {
+    color: #cccbcb;
+    font-family: Regular;
+    font-size: 25px;
+    position: fixed;
+    bottom: 30px;
+}
+
+.timer a {
+    text-decoration: none;
+    color: #cccbcb;
 }
