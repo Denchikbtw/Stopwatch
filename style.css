@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Regular;
+    src: url(fonts/AlumniSansPinstripe-Regular.ttf);
+}
+
+@font-face {
+    font-family: Thin;
+    src: url(fonts/Poppins-Thin.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100vw;
+    align-items: center;
+    justify-items: center;
+    padding: 50px;
+}
+
+.numbers {
+    color: #f3ecec;
+    font-size: 140px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: Regular;
+}
+
+#right-button, #left-button{
+    color: #f3ecec;
+    background-color: #2a2929;
+    width: 100px;
+    height: 100px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Thin;
+}
+
+#left-button {
+    margin-right: 130px;
+    justify-self: right;
+}
+
+#right-button {
+    color: #2ED15A;
+    background-color: #0C2A12; 
+    margin-left: 130px;
+    justify-self: left;
+}
+
+ul {
+    border-top: 2px solid #2a2929;
+    height: 100%;
+    width: 460px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+ul li {
+    color: #cccbcb;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    font-size: 30px;
+    font-family: Regular;
+    border-bottom: 0.5px solid #2a2929;
+}
