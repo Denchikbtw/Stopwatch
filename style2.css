@@ -75,3 +75,16 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
+.stopwatch {
+    color: #cccbcb;
+    font-family: Regular;
+    font-size: 25px;
+    position: fixed;
+    bottom: 30px;
+}
+
+.stopwatch a {
+    text-decoration: none;
+    color: #cccbcb;
+}
