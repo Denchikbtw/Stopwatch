@@ -8,7 +8,7 @@
     src: url(fonts/Poppins-Thin.otf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -26,15 +26,17 @@ body {
     padding: 50px;
 }
 
-.numbers {
+.clock {
     color: #f3ecec;
     font-size: 140px;
     grid-column-start: 1;
     grid-column-end: 3;
     font-family: Regular;
+    width: 380px;
 }
 
-#right-button, #left-button{
+#right-button,
+#left-button {
     color: #f3ecec;
     background-color: #2a2929;
     width: 100px;
@@ -47,32 +49,46 @@ body {
     transition: 0.2s;
 }
 
-#right-button:hover, #left-button:hover {
-   filter: brightness(0.85); 
+#right-button:hover,
+#left-button:hover {
+    filter: brightness(0.85);
 }
 
-#right-button:active, #left-button:active {
-    filter: brightness(0.75); 
- }
+#right-button:active,
+#left-button:active {
+    filter: brightness(0.75);
+}
 
 #left-button {
     margin-right: 130px;
     justify-self: right;
 }
 
-#right-button {
-    color: #2ED15A;
-    background-color: #0C2A12; 
+.start {
+    color: #2ED15A !important;
+    background-color: #0C2A12 !important;
+    margin-left: 130px;
+    justify-self: left;
+}
+
+.stop {
+    color: #904441 !important;
+    background-color: #340E0B !important;
     margin-left: 130px;
     justify-self: left;
 }
 
 ul {
     border-top: 2px solid #2a2929;
-    height: 100%;
+    height: 200px;
     width: 460px;
     grid-column-start: 1;
     grid-column-end: 3;
+    overflow-y: scroll;
+}
+
+ul::-webkit-scrollbar { 
+    width: 0;
 }
 
 ul li {
