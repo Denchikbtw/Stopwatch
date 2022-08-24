@@ -113,3 +113,25 @@ ul li {
     text-decoration: none;
     color: #cccbcb;
 }
+
+@media screen and (max-width:550px) {
+    #left-button {
+        margin-right: 70px;
+    }
+
+    #right-button {
+        margin-left: 70px;
+    }
+    ul {
+        width: 360px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .clock {
+        font-size: 130px;
+        width: 351px;
+    }
+}
