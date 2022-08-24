@@ -81,10 +81,6 @@ body {
   transform: rotate(180deg);
 }
 
-.timer-start {
-  display: flex;
-}
-
 #right-button,
 #left-button {
   width: 100px;
