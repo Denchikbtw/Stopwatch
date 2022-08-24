@@ -2,23 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer</title>
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-    <div class="numbers">
-        <span>0 15 0</span>
+  <div class="numbers">
+    <div class="hour">
+      <button class="time-up"><img src="img/arrow.png"></button>
+      <span>
+        <span id="hours">0</span>
+        <span class="mark">h</span>
+      </span>
+      <button class="time-down"><img src="img/arrow.png"></button>
     </div>
-    <button id="right-button">Cancel</button>
-    <button id="left-button">Start</button>
-    <button id="down-button">When Timer Ends</button>
-    <div class="stopwatch">
-        <a href="index.html">StopWatch</a>
+
+    <div class="minute">
+      <button class="time-up"><img src="img/arrow.png"></button>
+      <span>
+        <span id="minutes">0</span>
+        <span class="mark">m</span>
+      </span>
+      <button class="time-down"><img src="img/arrow.png"></button>
     </div>
+
+    <div class="second">
+      <button class="time-up"><img src="img/arrow.png"></button>
+      <span>
+        <span id="seconds">0</span>
+        <span class="mark">s</span>
+      </span>
+      <button class="time-down"><img src="img/arrow.png"></button>
+    </div>
+  </div>
+  <button id="left-button">Cancel</button>
+  <button id="right-button" class="start">Start</button>
+  <button id="down-button">When Timer Ends</button>
+  <div class="stopwatch">
+    <a href="index.html">StopWatch</a>
+  </div>
 </body>
 
 </html>
