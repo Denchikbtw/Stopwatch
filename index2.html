@@ -12,38 +12,41 @@
 <body>
   <div class="numbers">
     <div class="hour">
-      <button class="time-up"><img src="img/arrow.png"></button>
+      <button class="time-up time-up-hour"><img src="img/arrow.png"></button>
       <span>
         <span id="hours">0</span>
         <span class="mark">h</span>
       </span>
-      <button class="time-down"><img src="img/arrow.png"></button>
+      <button class="time-down time-down-hour"><img src="img/arrow.png"></button>
     </div>
 
     <div class="minute">
-      <button class="time-up"><img src="img/arrow.png"></button>
+      <button class="time-up time-up-minute"><img src="img/arrow.png"></button>
       <span>
         <span id="minutes">0</span>
         <span class="mark">m</span>
       </span>
-      <button class="time-down"><img src="img/arrow.png"></button>
+      <button class="time-down time-down-minute"><img src="img/arrow.png"></button>
     </div>
 
     <div class="second">
-      <button class="time-up"><img src="img/arrow.png"></button>
+      <button class="time-up time-up-second"><img src="img/arrow.png"></button>
       <span>
         <span id="seconds">0</span>
         <span class="mark">s</span>
       </span>
-      <button class="time-down"><img src="img/arrow.png"></button>
+      <button class="time-down time-down-second"><img src="img/arrow.png"></button>
     </div>
   </div>
   <button id="left-button">Cancel</button>
   <button id="right-button" class="start">Start</button>
-  <button id="down-button">When Timer Ends</button>
+  <div id="end-time"></div>
   <div class="stopwatch">
     <a href="index.html">StopWatch</a>
   </div>
+
+  <script src="moment.js"></script>
+  <script src="script2.js"></script>
 </body>
 
 </html>
